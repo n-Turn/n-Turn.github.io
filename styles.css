@@ -499,7 +499,7 @@ html {
     width: 100%; /* Make image responsive */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Cover the area of the container without stretching */
-    /* Remove max-width and max-height if previously set, as width and height here take precedence */
+    border-radius: 20px;
 }
 
 /* Add this to make sure only the first slide is displayed initially */
@@ -816,6 +816,7 @@ img.displaySlide
     padding-bottom: 15px;
     flex-direction: column;
     border-radius: 8px;
+    box-shadow: 0 2px 5px #fff;
   }
 
   .card .img img {
@@ -823,6 +824,8 @@ img.displaySlide
     height: 100%;
     object-fit: cover;
     border: 4px solid #fff;
+    border-radius: 20px;
+    
   }
 
   .card p {
