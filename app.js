@@ -156,3 +156,17 @@ document.addEventListener("DOMContentLoaded", () => {
     sectionObserver.observe(section);
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".type_it");
+
+  const observerOptions = {
+    threshold: 0.1, // Trigger the animation when at least 10% of the section is visible
+  };
+
+  new TypeIt("#simpleUsage", {
+    strings: "Hi, I'm Nico.",
+    speed: 50,
+    waitUntilVisible: true,
+  }).go();
+});

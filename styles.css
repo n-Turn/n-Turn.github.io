@@ -200,11 +200,11 @@ html {
 }
 
 .main__content h1 {
-  font-size: 5rem;
+  font-size: calc(120%);
 }
 
 .main__content h2 {
-  font-size: 1.5rem;
+  font-size: calc(1vw + 1vh);
 }
 
 .main__content h1,
@@ -215,6 +215,12 @@ html {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  
+}
+
+.main__content h1,
+.main__content h2 .text {
+  font-size: calc(2.8vw + 2.8vh);
 }
 
 .main__content {
@@ -293,6 +299,11 @@ html {
   .main__content {
     text-align: center; /* Center the text for smaller screens */
     padding: 0;
+  }
+
+  .main__content h1,
+  .main__content h2 .text {
+  font-size: calc(1vw + 1vh);
   }
 
   .main__content h1 {
@@ -812,6 +823,7 @@ footer {
   background-color: #313131;
 }
 
+
 /* Fade animation */
 .fade {
   -webkit-transition: all 0.8s;
@@ -835,6 +847,7 @@ footer {
 .delay-1.inview2 {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
+  
 }
 
 .delay-2.inview2 {
