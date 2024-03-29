@@ -514,6 +514,7 @@ img.displaySlide {
   .about-me__container {
     flex-direction: column;
     padding: 20px;
+    align-items: center;
   }
 
   .about-me__content {
@@ -535,7 +536,7 @@ img.displaySlide {
 /* SKILLS SECTIONS*/
 .skills-section {
   padding-top: 100px;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
   background-color: #313131; /* Adjust the background color as needed */
   color: #000000; /* Adjust text color as needed */
 }
@@ -546,7 +547,7 @@ img.displaySlide {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 5px #fff; /* a subtle shadow */
-  max-width: 700px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -562,7 +563,10 @@ img.displaySlide {
   list-style: none; /* Remove default list styling */
   padding: 0; /* Remove default padding */
   font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
 }
+
 
 .skills-list li {
   position: relative; /* Allows absolute positioning of pseudo-elements relative to each list item */
@@ -570,17 +574,17 @@ img.displaySlide {
   margin-bottom: 10px; /* Space between items */
 }
 
-.skills-list li::before {
-  content: ""; /* Required for the pseudo-element to display */
-  position: absolute;
-  left: 0; /* Align with the start of the list item */
-  top: 50%; /* Center vertically */
-  transform: translateY(-50%); /* Precise vertical centering */
-  width: 10px; /* Custom bullet width */
-  height: 10px; /* Custom bullet height */
-  background-color: #000000; /* Custom bullet color */
-  border-radius: 3px;
-}
+/* .skills-list li::before { */
+  /* content: ""; Required for the pseudo-element to display */
+  /* position: absolute; */
+  /* left: 0; Align with the start of the list item */
+  /* top: 50%; Center vertically */
+  /* transform: translateY(-50%); Precise vertical centering */
+  /* width: 10px; Custom bullet width */
+  /* height: 10px; Custom bullet height */
+  /* background-color: #000000; Custom bullet color */
+  /* border-radius: 3px; */
+/*}*/
 
 @media screen and (max-width: 960px) {
   .skills-section,
@@ -632,8 +636,8 @@ img.displaySlide {
 
 .projects__container {
   display: flex;
+  align-content: space;
   justify-content: space-between;
-  align-items: flex-start;
   width: 100%; /* Take the full width of the section */
   flex-wrap: wrap; /* Wrap the items if necessary */
   max-width: 1100px;
@@ -641,7 +645,6 @@ img.displaySlide {
 }
 
 .projects__box {
-  justify-content: center;
   scale: 1;
   flex: 1;
   background-color: #fff;
@@ -663,7 +666,7 @@ img.displaySlide {
 
 .projects__box img {
   border-radius: 10px;
-  max-width: 500px;
+  max-width: 100%;
   max-height: 500px;
 }
 
@@ -686,12 +689,13 @@ img.displaySlide {
   }
 
   /* Adjust image size within each project box */
-  .image1 {
+  .image1, .p{
     /* Adjust max-width if the image should be smaller than the box */
     width: 100%; /* Full width within the box */
     height: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Ensure the whole image fits within the box */
   }
+
 }
 
 /* Extracurricular */
