@@ -173,8 +173,8 @@ html {
 
 /* Hero Section CSS */
 .main {
-  padding-top: 200px;
-  padding-bottom: 300px;
+  padding-top: 100px;
+  padding-bottom: 220px;
   background-color: #313131;
 }
 
@@ -403,7 +403,7 @@ html {
 /* ------------------- */
 .about-me {
   padding-top: 40px;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
   background-color: #313131; /* or any color you prefer */
 }
 
@@ -411,7 +411,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -457,7 +457,7 @@ html {
 .about-me__slider img {
   width: 100%; /* Make image responsive */
   height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Cover the area of the container without stretching */
+  object-fit: center; /* Cover the area of the container without stretching */
   border-radius: 20px;
 }
 
@@ -513,10 +513,16 @@ img.displaySlide {
 @media screen and (max-width: 960px) {
   .about-me__container {
     flex-direction: column;
+    padding: 20px;
   }
 
   .about-me__content {
     flex-direction: column;
+    max-width: 550px;
+  }
+
+  .about-me__description p {
+    text-align: left;
   }
 
   .about-me__description,
@@ -580,11 +586,18 @@ img.displaySlide {
   .skills-section,
   .skills-list {
     flex-direction: column;
+    padding: 20px;
   }
 
   .skills-list {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .skills-box
+  {
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
 }
 
@@ -807,6 +820,10 @@ h3 {
   .wrapper i:last-child {
     right: 24px;
   }
+  .extracurricular__section
+  {
+    padding: 20px;
+  }
 }
 @media screen and (max-width: 600px) {
   .wrapper .carousel {
@@ -826,8 +843,8 @@ footer {
 
 /* Fade animation */
 .fade {
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   opacity: 0;
   -webkit-transform: translateY(20px);
   transform: translateY(20px);
