@@ -173,8 +173,8 @@ html {
 
 /* Hero Section CSS */
 .main {
-  padding-top: 100px;
-  padding-bottom: 220px;
+  padding-top: 200px;
+  padding-bottom: 400px;
   background-color: #313131;
 }
 
@@ -199,9 +199,6 @@ html {
   border-radius: 25px;
 }
 
-.main__content h1 {
-  font-size: calc(120%);
-}
 
 .main__content h2 {
   font-size: calc(1vw + 1vh);
@@ -221,6 +218,7 @@ html {
 .main__content h1,
 .main__content h2 .text {
   font-size: calc(2.8vw + 2.8vh);
+  white-space: nowrap;
 }
 
 .main__content {
